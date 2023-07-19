@@ -15,6 +15,6 @@ Son controles extra de windows forms que permiten ajustes adicionales.
 ## Button custom 
 
 ![Imagen de controles](/assets/img/Controls.png)
-![Imagen de controles activos](/assets/img/Controls.png)
+![Imagen de controles activos](/assets/img/ControlsActive.png)
 
 Contribucion a [RJControls](https://github.com/RJCodeAdvance/RJControls)
