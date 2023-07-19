@@ -32,7 +32,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.trackBarCustom1 = new MaControllers.Controles.TrackBarCustom();
+            this.trackBarCustom2 = new MaControllers.Controles.TrackBarControls.TrackBarCustom();
             this.buttonCustom1 = new MaControllers.Controles.ButtonCustom();
             this.circularPictureBox1 = new MaControllers.Controles.CircularPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -53,27 +53,42 @@
             // 
             // trackBar1
             // 
-            this.trackBar1.Location = new System.Drawing.Point(429, 69);
-            this.trackBar1.Maximum = 1000;
+            this.trackBar1.Location = new System.Drawing.Point(303, 82);
+            this.trackBar1.Maximum = 2000;
+            this.trackBar1.Minimum = 2000;
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(104, 45);
+            this.trackBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.trackBar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.trackBar1.Size = new System.Drawing.Size(45, 151);
             this.trackBar1.TabIndex = 13;
+            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBar1.Value = 2000;
             this.trackBar1.MouseCaptureChanged += new System.EventHandler(this.trackBar1_MouseCaptureChanged);
             // 
-            // trackBarCustom1
+            // trackBarCustom2
             // 
-            this.trackBarCustom1.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.trackBarCustom1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.trackBarCustom1.Location = new System.Drawing.Point(278, 149);
-            this.trackBarCustom1.MaxValue = 100;
-            this.trackBarCustom1.MinValue = 0;
-            this.trackBarCustom1.Name = "trackBarCustom1";
-            this.trackBarCustom1.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBarCustom1.ShowValues = true;
-            this.trackBarCustom1.Size = new System.Drawing.Size(50, 247);
-            this.trackBarCustom1.TabIndex = 14;
-            this.trackBarCustom1.Text = "trackBarCustom1";
-            this.trackBarCustom1.Value = 10;
+            this.trackBarCustom2.BackColorTooltip = System.Drawing.SystemColors.ControlDarkDark;
+            this.trackBarCustom2.ColorThumb = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(72)))), ((int)(((byte)(74)))));
+            this.trackBarCustom2.ColorThumbActive = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
+            this.trackBarCustom2.ColorThumbHover = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
+            this.trackBarCustom2.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Italic);
+            this.trackBarCustom2.ForeColorTooltip = System.Drawing.SystemColors.ControlLightLight;
+            this.trackBarCustom2.Location = new System.Drawing.Point(249, 304);
+            this.trackBarCustom2.MaxValue = 100;
+            this.trackBarCustom2.MinimumSize = new System.Drawing.Size(100, 60);
+            this.trackBarCustom2.MinValue = 0;
+            this.trackBarCustom2.Name = "trackBarCustom2";
+            this.trackBarCustom2.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.trackBarCustom2.ShowTooltip = true;
+            this.trackBarCustom2.ShowValues = false;
+            this.trackBarCustom2.Size = new System.Drawing.Size(181, 60);
+            this.trackBarCustom2.SizeRadiusPercent = 100;
+            this.trackBarCustom2.SizeThumb = 15;
+            this.trackBarCustom2.TabIndex = 15;
+            this.trackBarCustom2.Text = "trackBarCustom2";
+            this.trackBarCustom2.TrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.trackBarCustom2.TrackColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
+            this.trackBarCustom2.Value = 0;
             // 
             // buttonCustom1
             // 
@@ -123,13 +138,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.trackBarCustom1);
+            this.Controls.Add(this.trackBarCustom2);
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.buttonCustom1);
             this.Controls.Add(this.circularPictureBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).EndInit();
@@ -144,7 +159,7 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.ToolTip toolTip1;
-        private Controles.TrackBarCustom trackBarCustom1;
+        private Controles.TrackBarControls.TrackBarCustom trackBarCustom2;
     }
 }
 

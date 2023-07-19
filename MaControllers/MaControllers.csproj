@@ -56,15 +56,15 @@
     <Compile Include="Controles\CircularPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controles\CrossGrapics.cs" />
+    <Compile Include="Helpers\CrossGrapics.cs" />
     <Compile Include="Controles\RadioButtonCustom.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controles\Thum.cs" />
-    <Compile Include="Controles\TrackBarCustom.cs">
+    <Compile Include="Controles\TrackBarControls\ThumbTrackBar.cs" />
+    <Compile Include="Controles\TrackBarControls\TooltipTrackbar.cs" />
+    <Compile Include="Controles\TrackBarControls\TrackBarCustom.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controles\TriangleGraphics.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

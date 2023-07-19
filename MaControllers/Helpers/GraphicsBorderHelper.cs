@@ -37,7 +37,7 @@ namespace MaControllers.Helpers
 
             Rectangle recBorde = Rectangle.Inflate(superficie, -paddingBorde, -paddingBorde);
             
-            using (GraphicsPath pathBorde = GraphicsRoundedHelper.ObtienPathYCaculaRadio(recBorde, borderPercent))
+            using (GraphicsPath pathBorde = GraphicsRoundedHelper.ObtieneRutaRedondeada(recBorde, borderPercent))
             using (Pen brus = new Pen(color, bordeSize))
             {
                 g.DrawPath(brus, pathBorde);

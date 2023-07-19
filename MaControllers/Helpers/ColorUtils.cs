@@ -3,13 +3,15 @@ using System;
 using System.Collections;
 using System.Drawing;
 using System.Text.RegularExpressions;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MaControllers.Helpers
 {
     public static class ColorUtils
     {
+        //Indica si es una expresion reglar
         private static Regex isHexadecimalString = new Regex("^#?[0-9a-fA-F]+$");
+
+
         public static int HtmlToArgb(string hex)
         {
             if (!isHexadecimalString.IsMatch(hex))
@@ -59,6 +61,10 @@ namespace MaControllers.Helpers
 
 
             //return "#" + IntToHex(argb, 6).Substring(2);
+        }
+        public static Color HtmlToColor(string hex)
+        {
+            return Color.FromArgb(HtmlToArgb(hex));
         }
 
        //jex to int

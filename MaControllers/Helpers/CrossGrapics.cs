@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MaControllers.Controles
+namespace MaControllers.Helpers
 {
 
     public class Line
